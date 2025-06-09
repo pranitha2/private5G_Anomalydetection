@@ -1,8 +1,8 @@
 [ssh_server]
-hostname = 192.168.6.175
+hostname = your ip
 port = 22
-username = inv-6
-password = invences123
+username = x
+password = y
 
 [capture]
 interface = br0
