@@ -1,0 +1,21 @@
+[ssh_server]
+hostname = 192.168.6.175
+port = 22
+username = inv-6
+password = invences123
+
+[capture]
+interface = br0
+packet_count = 60
+remote_pcap_path = /home/inv-6/remote_capture.pcap
+
+local_pcap_dir = ./captures
+# interval for testing
+interval_seconds = 60
+# New options for anomaly detection
+ml_contamination = 0.05
+deep_scan_script_path = /home/inv-6/packet_monitorning/captures/deep_anomaly_scan.sh
+# anomaly_detector_script_path = anomaly_detector.py # Path relative to agent.py, or absolute
+
+[prometheus]
+exporter_port = 8000
